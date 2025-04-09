@@ -1,0 +1,6 @@
+PySide6>=6.6.0,<6.7.0
+langchain>=0.1.0,<0.2.0
+langchain-groq>=0.1.0,<0.2.0
+python-dotenv>=1.0.0 # Often useful for API keys, though QSettings is also used
+PyYAML>=6.0 # Langchain dependency often needs this explicitly
+# Add other potential Langchain core/community dependencies as needed during testing
