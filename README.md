@@ -98,7 +98,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Acknowledgments
 
-*   Special thanks to ScuffedEpoch for the TINS methodology and the initial example.
+*   Special thanks to ScuffedEpoch for the [TINS](https://github.com/ScuffedEpoch/TINS) methodology and the initial example.
 *   Thanks to the free tier AI assistant for its initial contribution to the project.
 *   Gratitude to the Groq team for their API and support.
 *   Thanks to the Langchain and PySide6 communities for their respective libraries and documentation.
