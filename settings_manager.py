@@ -36,7 +36,7 @@ class SettingsManager:
 
     def get_llm_model(self):
         # Default to model specified in README metadata
-        # ZS:LLM_MODEL:QWEN-72B-CHAT (or similar available on Groq)
+        # ZS:LLM_MODEL:QWEN-QWQ-32B (or similar available on Groq)
         # Let's use a known high-capability model available on Groq
         return self.settings.value("llmModel", "llama3-70b-8192") # Updated to a common Groq model
 

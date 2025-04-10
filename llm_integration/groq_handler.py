@@ -75,7 +75,7 @@ class GroqHandler:
             for model in models_response.data:
                 model_id = model.id if hasattr(model, 'id') else str(model)
                 # Skip whisper models
-                if "whisper" in model_id.lower():
+                if "whisper" in model_id.lower() or "playai" in model_id.lower():
                     continue
 
                 # Create a dictionary with model details
@@ -144,13 +144,11 @@ class GroqHandler:
             return None
 
     def _clean_groq_output(self, text):
-        """Removes Groq specific XML tags like <|thinking|> as per README."""
+        """Remove content between <think>...</think> tags (including the tags themselves)"""
         if not text:
             return ""
-        # Basic regex to remove tags like <|tagname|> ... </|tagname|> or self-closing <|tagname|/>
-        # This might need refinement based on actual Groq output variations.
-        cleaned = re.sub(r'<\|[^>]*?\|>', '', text)
-        cleaned = re.sub(r'</\|[^>]*?\|>', '', cleaned) # Handle closing tags if separate
+        # Remove content between <think>...</think> tags (including the tags themselves)
+        cleaned = re.sub(r'<think>.*?</think>', '', text)
         return cleaned.strip()
 
     def run_tester_llm(self, system_prompt, user_input=None, **kwargs):
